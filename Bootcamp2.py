@@ -1,0 +1,12 @@
+import hashlib
+strhash = input('Enter a string :')
+string = strhash.encode()
+alg_md5 = hashlib.md5(string)
+print("md5:")
+print(alg_md5.hexdigest())
+alg_sha256 = hashlib.sha256(string)
+print("sha256:")
+print(alg_sha256.hexdigest())
+alg_sha512 = hashlib.sha512(string)
+print("sha512:")
+print(alg_sha512.hexdigest())
